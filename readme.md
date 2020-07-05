@@ -68,7 +68,7 @@ corO2/Time/Mass | Corrected O2/Time/Mass value to obtain mass-corrected rate of 
 
 Variable name | Description
 --- | ---
-Snail | Number signifying which snail the cercaria and corresponding video belonged to
+Snail | Number signifying which snail the cercaria originated from
 Temperature | Temperature at which the cercariae were recorded
 avgSpeed | Average swimming speed for each cercaria, calculated in pixels per second within imageJ by the wrMTrck plugin
-avgSpeed | Average swimming speed for each cercaria in millimeters per second, calculated using the conversion factor 94.5 pixels per millimeter
+avgSpeedMM | Average swimming speed for each cercaria in millimeters per second, calculated using the conversion factor 94.5 pixels per millimeter
