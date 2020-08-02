@@ -49,7 +49,7 @@ TBD
 
 Variable name | Description
 --- | ---
-Type | Label for respiration jars in the experiment where 'tad' = tadpole for measurement & 'control' = an empty control jar
+Type | Label for respiration jars in the experiment where `tad` = tadpole for measurement & `control` = an empty control jar
 ID | Jar label for internal tracking of location
 Block | Number representing which block the jar was in
 AccInc | Number signifying which acclimation incubator the animal was maintained in during the acclimation period
