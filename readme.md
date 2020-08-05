@@ -54,7 +54,7 @@ ID | Jar label for internal tracking of location
 Block | Number representing which block the jar was in
 AccInc | Number signifying which acclimation incubator the animal was maintained in during the acclimation period
 AccTemp | Temperature at which the tadpole was acclimated measured in Celsius
-Stage | Gosner stage of the tadpole (based on Gosner, K. 1960. A simplified table for staging anuran embryos and larvae with notes on identification. *Herpetologica* 16(3): 183-190)
+Stage | Gosner stage of the tadpole (based on **Gosner, K. 1960. A simplified table for staging anuran embryos and larvae with notes on identification. *Herpetologica* 16(3): 183-190**)
 Mass | Tadpole mass measured in grams 
 PerfRound | Number signifying which of the three sequential performance temperatures the measurement was taken
 PerfTemp | Temperature at which respiration measurements were taken
