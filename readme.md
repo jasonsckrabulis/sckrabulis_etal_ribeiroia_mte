@@ -62,7 +62,7 @@ Time | Duration of the respiration period, calculated from start and stop times 
 O2 | Change in dissolved oxygen, calculated by the difference between the initial concentration of oxygen in the control jars and the final measurement from each tadpole, in milligrams per liter
 O2/Time | Rate of oxygen consumed per minute, calculated by dividing O2 by Time
 O2/Time/Mass | Mass-corrected rate of oxygen consumed per minute per tadpole mass, calculated by dividing O2/Time by Mass (units: g/L oxygen per min per g tadpole)
-corO2/Time/Mass | Corrected O2/Time/Mass value to obtain mass-corrected rate of oxygen consumed per minute controlling for jar volue, calculated by multiplying O2/Time/Mass by volume of jar 0.57L (units: g oxygen/min/g tadpole)
+corO2/Time/Mass | Corrected O2/Time/Mass value to obtain mass-corrected rate of oxygen consumed per minute controlling for jar volue, calculated by multiplying O2/Time/Mass by volume of jar 0.57L (units: g oxygen per min per g tadpole)
 
 **Cerc swimming speed.csv**
 
