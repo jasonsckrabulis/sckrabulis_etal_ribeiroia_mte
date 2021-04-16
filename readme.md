@@ -43,13 +43,13 @@ Predicting temperature effects on species interactions can be challenging, espec
    * Cerc swimming speed.csv (dataset for cercaria swimming speed experiment)
    * Uninfected tadpole respiration.csv (dataset for host respiration acclimation experiment)
 * code  
-   Folder of statistical R code used to analyze data as .txt files 
-   * Activation energy bootstrap.txt (Used to generate individual 95% confidence bands for respiration and metacercaria clearance)
-   * Cercaria swimming speed.txt (Used to analyze `Cerc swimming speed.csv` data)
-   * Metacercaria clearance.txt (Used to analyze metacercaria clearance rate from Altman et al. 2016 data on Dryad)
-   * Metacercaria encystment.txt (Used to analyse metacercaria encystment from Altman et al. 2016 data on Dryad)
-   * Sensitivity and To.txt (Used to generate sensitivity analysis and To optimization plots in Supplement)
-   * Tadpole respiration.txt (Used to analyse `Uninfected tadpole respiration.csv` data)
+   Folder of statistical R code used to analyze data as .R files for any text editor 
+   * Activation energy bootstrap.R (Used to generate individual 95% confidence bands for respiration and metacercaria clearance)
+   * Cercaria swimming speed.R (Used to analyze `Cerc swimming speed.csv` data)
+   * Metacercaria clearance.R (Used to analyze metacercaria clearance rate from Altman et al. 2016 data on Dryad)
+   * Metacercaria encystment.R (Used to analyse metacercaria encystment from Altman et al. 2016 data on Dryad)
+   * Sensitivity and To.R (Used to generate sensitivity analysis and To optimization plots in Supplement)
+   * Tadpole respiration.R (Used to analyse `Uninfected tadpole respiration.csv` data)
 
 ---
 
