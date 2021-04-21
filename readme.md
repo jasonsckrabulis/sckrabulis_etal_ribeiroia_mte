@@ -39,17 +39,17 @@ Predicting temperature effects on species interactions can be challenging, espec
 * README.md
 * data  
    Folder of experimental data as .csv files used in data analysis for manuscript (Please note that metacercaria encystment and clearance data is from Altman et al. 2016 and can be found on [Dryad](https://datadryad.org/stash/dataset/doi:10.5061/dryad.f3k8p)) 
-   * Activation energy bootstrap.csv (final output from `Activation energy bootstrap.txt` used in Fig. 3)
-   * Cerc swimming speed.csv (dataset for cercaria swimming speed experiment)
-   * Uninfected tadpole respiration.csv (dataset for host respiration acclimation experiment)
+   * `Activation energy bootstrap.csv` (final output from `Activation energy bootstrap.txt` used in Fig. 3)
+   * `Cerc swimming speed.csv` (dataset for cercaria swimming speed experiment)
+   * `Uninfected tadpole respiration.csv` (dataset for host respiration acclimation experiment)
 * code  
    Folder of statistical R code used to analyze data as .R files for any text editor 
-   * Activation energy bootstrap.R (Used to generate individual 95% confidence bands for respiration and metacercaria clearance)
-   * Cercaria swimming speed.R (Used to analyze `Cerc swimming speed.csv` data)
-   * Metacercaria clearance.R (Used to analyze metacercaria clearance rate from Altman et al. 2016 data on Dryad)
-   * Metacercaria encystment.R (Used to analyse metacercaria encystment from Altman et al. 2016 data on Dryad)
-   * Sensitivity and To.R (Used to generate sensitivity analysis and To optimization plots in Supplement)
-   * Tadpole respiration.R (Used to analyse `Uninfected tadpole respiration.csv` data)
+   * `Activation energy bootstrap.R` (Used to generate individual 95% confidence bands for respiration and metacercaria clearance)
+   * `Cercaria swimming speed.R` (Used to analyze `Cerc swimming speed.csv` data)
+   * `Metacercaria clearance.R` (Used to analyze metacercaria clearance rate from Altman et al. 2016 data on Dryad)
+   * `Metacercaria encystment.R` (Used to analyse metacercaria encystment from Altman et al. 2016 data on Dryad)
+   * `Sensitivity and To.R` (Used to generate sensitivity analysis and To optimization plots in Supplement)
+   * `Tadpole respiration.R` (Used to analyse `Uninfected tadpole respiration.csv` data)
 
 ---
 
