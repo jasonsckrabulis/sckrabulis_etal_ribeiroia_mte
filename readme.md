@@ -78,7 +78,7 @@ AccTemp | Temperature at which the tadpole was acclimated measured in Celsius
 Stage | Gosner stage of the tadpole (based on **Gosner, K. 1960. A simplified table for staging anuran embryos and larvae with notes on identification. *Herpetologica* 16(3): 183-190**)
 Mass | Tadpole mass measured in grams 
 PerfRound | Number signifying which of the three sequential performance temperatures the measurement was taken
-PerfTemp | Temperature at which respiration measurements were taken
+PerfTemp | Temperature at which respiration measurements were taken in Celsius
 Time | Duration of the respiration period, calculated from start and stop times in minutes
 O2 | Change in dissolved oxygen, calculated by the difference between the initial concentration of oxygen in the control jars and the final measurement from each tadpole, in milligrams per liter
 O2/Time | Rate of oxygen consumed per minute, calculated by dividing O2 by Time
