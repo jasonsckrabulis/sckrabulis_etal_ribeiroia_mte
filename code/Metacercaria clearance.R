@@ -1591,7 +1591,7 @@ par(mfrow=c(2,2))
 		ylab="Activation energy (eV)", ylim=c(0,1.8), lty=2, lwd=2)
 	lines(eaData$AccTemp, eaData$rlow,lty=2)
 	lines(eaData$AccTemp, eaData$rhigh,lty=2)
-		shade<-rgb(105, 105, 105, alpha=100, maxColorValue=255)
+	shade<-rgb(105, 105, 105, alpha=100, maxColorValue=255)
 	polygon(x=c(eaData$AccTemp, rev(eaData$AccTemp)), y=c(eaData$rlow, rev(eaData$rhigh)), col=shade, border=NA)
 
 	lines(eaData$AccTemp, eaData$clear, lwd=2)
