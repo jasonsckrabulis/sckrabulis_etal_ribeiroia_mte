@@ -18,6 +18,7 @@ For questions concerning the manuscript, please email the corresponding author a
 
 ### Change log
 
+* September 24, 2021: Replaced contents of `/code` with revised code
 * October 21, 2020: Replaced normal text files within `/code` with .R files
 * August 27, 2020: Repository complete for submission
 * July 1, 2020: First full commit
