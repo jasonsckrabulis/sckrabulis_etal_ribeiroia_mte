@@ -62,7 +62,7 @@ Variable name | Description
 --- | ---
 Snail | Number signifying which snail the cercaria originated from
 Temperature | Temperature at which the cercariae were recorded
-avgSpeed | Average swimming speed for each cercaria, calculated in pixels per second within imageJ by the wrMTrck plugin
+avgSpeed | Average swimming speed for each cercaria, calculated in pixels per second within imageJ by the wrMTrck plugin (**Nussbaum-Krammer, C.I., M.F. Neto, R.M. Brielmann, J.S. Pederson, and R.I. Morimoto. 2015. Investigating the spreading and toxicity of prion-like proteins using the metazoan model organism C. elegans. *Journal of Visualized Experiments* 95: e52321**)
 avgSpeedMM | Average swimming speed for each cercaria in millimeters per second, calculated using the conversion factor 94.5 pixels per millimeter
 
 ---
