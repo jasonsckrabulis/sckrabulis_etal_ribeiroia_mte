@@ -28,6 +28,10 @@ For questions concerning the manuscript, please email the corresponding author a
 
 Please cite work as:
 >TBD
+
+Archived version of data and code can be found on Dryad:
+>TBD
+
 ---
 
 ### Abstract
