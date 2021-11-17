@@ -18,6 +18,7 @@ For questions concerning the manuscript, please email the corresponding author a
 
 ### Change log
 
+* November 17, 2021: Fixed references in .R files to other scripts and datasets; other improvements for parity with Dryad submission
 * September 24, 2021: Replaced contents of `/code` with revised code
 * October 21, 2020: Replaced normal text files within `/code` with .R files
 * August 27, 2020: Repository complete for submission
@@ -31,7 +32,7 @@ Please cite work as:
 
 ### Abstract
 
-Predicting temperature effects on species interactions can be challenging, especially for parasitism where it is difficult to experimentally separate host and parasite thermal performance curves. Prior authors proposed a possible solution based on the metabolic theory of ecology (MTE), using MTE-based equations to describe the thermal mismatch between host and parasite performance curves and account for thermal acclimation responses. Here we use published infection data, supplemented with experiments measuring metabolic responses to temperature in each species, to show that this modeling framework can successfully describe thermal acclimation effects on two different stages of infection in a tadpole-trematode system. All thermal acclimation effects on host performance manifested as changes in one key model parameter (activation energy), with measurements of host respiration generating similar MTE parameter estimates and acclimation effects compared to measurements of the host’s ability to clear encysted parasites. This result suggests that metabolic parameter estimates for whole-body metabolism can sometimes be used to estimate temperature effects on host and parasite performance curves. However, we found different thermal patterns for measurements of host prevention of initial parasite encystment. This result emphasizes potential challenges when applying MTE-based models to complex parasite-host systems with multiple distinct stages of infection.
+Predicting temperature effects on species interactions can be challenging, especially for parasitism where it is difficult to experimentally separate host and parasite thermal performance curves. Prior authors proposed a possible solution based on the metabolic theory of ecology (MTE), using MTE-based equations to describe the thermal mismatch between host and parasite performance curves and account for thermal acclimation responses. Here we use published infection data, supplemented with experiments measuring metabolic responses to temperature in each species, to show that this modeling framework can successfully describe thermal acclimation effects on two different stages of infection in a tadpole-trematode system. All thermal acclimation effects on host performance manifested as changes in one key model parameter (activation energy), with measurements of host respiration generating similar MTE parameter estimates and acclimation effects compared to measurements of the host’s ability to clear encysted parasites. This result suggests that metabolic parameter estimates for whole-body metabolism can sometimes be used to estimate temperature effects on host and parasite performance curves. However, we found different thermal patterns for measurements of host prevention of initial parasite encystment emphasizing potential challenges when applying MTE-based models to complex parasite-host systems with multiple distinct stages of infection.
 
 ---
 
@@ -39,24 +40,37 @@ Predicting temperature effects on species interactions can be challenging, espec
 
 * README.md
 * data  
-   Folder of experimental data as .csv files used in data analysis for manuscript (Please note that metacercaria encystment and clearance data is from Altman et al. 2016 and can be found on [Dryad](https://datadryad.org/stash/dataset/doi:10.5061/dryad.f3k8p)) 
-   * `Activation energy bootstrap.csv` (final output from `Activation energy bootstrap.txt` used in Fig. 3)
-   * `Cerc swimming speed.csv` (dataset for cercaria swimming speed experiment)
-   * `Uninfected tadpole respiration.csv` (dataset for host respiration acclimation experiment)
+   Folder of experimental data as .csv files used in data analysis for manuscript (Please note that metacercaria encystment and clearance data is from Altman et al. 2016 and can be found on [Dryad here](https://datadryad.org/stash/dataset/doi:10.5061/dryad.f3k8p)) 
+   * `Activation energy bootstrap Sckrabulis et al 2021 AmNat.csv` (final output from `Activation energy bootstrap.txt` used in Fig. 3)
+   * `Cerc swimming speed Sckrabulis et al 2021 AmNat.csv` (dataset for cercaria swimming speed experiment)
+   * `Uninfected tadpole respiration Sckrabulis et al 2021 AmNat.csv` (dataset for host respiration acclimation experiment)
 * code  
    Folder of statistical R code used to analyze data as .R files for any text editor 
-   * `Activation energy bootstrap.R` (Used to generate individual 95% confidence bands for respiration and metacercaria clearance)
-   * `Cercaria swimming speed.R` (Used to analyze `Cerc swimming speed.csv` data)
-   * `Metacercaria clearance.R` (Used to analyze metacercaria clearance rate from Altman et al. 2016 data on Dryad)
-   * `Metacercaria encystment.R` (Used to analyse metacercaria encystment from Altman et al. 2016 data on Dryad)
-   * `Sensitivity and To.R` (Used to generate sensitivity analysis and To optimization plots in Supplement)
-   * `Tadpole respiration.R` (Used to analyse `Uninfected tadpole respiration.csv` data)
+   * `Activation energy bootstrap Sckrabulis et al 2021 AmNat.R` (Used to generate individual 95% confidence bands for respiration and metacercaria clearance)
+   * `Cercaria swimming speed Sckrabulis et al 2021 AmNat.R` (Used to analyze `Cerc swimming speed Sckrabulis et al 2021 AmNat.csv` data)
+   * `Metacercaria persistence Sckrabulis et al 2021 AmNat.R` (Used to analyze metacercaria clearance rate from Altman et al. 2016 data on Dryad)
+   * `Metacercaria encystment Sckrabulis et al 2021 AmNat.R` (Used to analyse metacercaria encystment from Altman et al. 2016 data on Dryad)
+   * `Mismatches Sensitivity and To Sckrabulis et al 2021 AmNat.R` (Used to generate hypothetical thermal mismatches, sensitivity analysis and To optimization plots in Supplement)
+   * `Uninfected tadpole respiration Sckrabulis et al 2021 AmNat.R` (Used to analyse `Uninfected tadpole respiration Sckrabulis et al 2021 AmNat.csv` data)
 
 ---
 
 ### Variable descriptions
 
-**Cerc swimming speed.csv**
+**Activation energy bootstrap Sckrabulis et al 2021 AmNat.csv**
+Variable name | Description
+--- | ---
+AccTemp | Temperature at which the tadpole was acclimated in Celsius as a range of values from the minimum and maximum of our experimental range in 0.1 C increments
+resp | Activation energy calculated from the best fit model for tadpole respiration at that particular acclimation temperature
+rlow | Lower value of 95% confidence interval for the predicted activation energy for respiration at that acclimation temperature
+rhigh | Upper value of 95% confidence interval for the predicted activation energy for respiration at that acclimation temperature
+clear | Activation energy calculated from the best fit model for metacercaria clearance at that particular acclimation temperature
+clow | Lower value of 95% confidence interval for the predicted activation energy for clearance at that acclimation temperature
+chigh | Upper value of 95% confidence interval for the predicted activation energy for clearance at that acclimation temperature
+
+---
+
+**Cercaria swimming speed Sckrabulis et al 2021 AmNat.csv**
 
 Variable name | Description
 --- | ---
@@ -67,7 +81,7 @@ avgSpeedMM | Average swimming speed for each cercaria in millimeters per second,
 
 ---
 
-**Uninfected tadpole respiration.csv**
+**Uninfected tadpole respiration Sckrabulis et al 2021 AmNat.csv**
 
 Variable name | Description
 --- | ---
@@ -85,17 +99,3 @@ O2 | Change in dissolved oxygen, calculated by the difference between the initia
 O2/Time | Rate of oxygen consumed per minute, calculated by dividing O2 by Time
 O2/Time/Mass | Mass-corrected rate of oxygen consumed per minute per tadpole mass, calculated by dividing O2/Time by Mass (units: g/L oxygen per min per g tadpole)
 corO2/Time/Mass | Corrected O2/Time/Mass value to obtain mass-corrected rate of oxygen consumed per minute controlling for jar volume, calculated by multiplying O2/Time/Mass by volume of jar 0.57L (units: g oxygen per min per g tadpole)
-
----
-
-**Activation energy bootstrap.csv**
-
-Variable name | Description
---- | ---
-AccTemp | Temperature at which the tadpole was acclimated in Celsius as a range of values from the minimum and maximum of our experimental range in 0.1C increments
-resp | Activation energy calculated from the best fit model for tadpole respiration at that particular acclimation temperature
-rlow | Lower value of 95% confidence interval for the predicted activation energy for respiration at that acclimation temperature
-rhigh | Upper value of 95% confidence interval for the predicted activation energy for respiration at that acclimation temperature
-clear | Activation energy calculated from the best fit model for metacercaria clearance at that particular acclimation temperature
-clow | Lower value of 95% confidence interval for the predicted activation energy for clearance at that acclimation temperature
-chigh | Upper value of 95% confidence interval for the predicted activation energy for clearance at that acclimation temperature
