@@ -18,6 +18,7 @@ For questions concerning the manuscript, please email the corresponding author a
 
 ### Change log
 
+* April 18, 2022: Update citation and Dryad DOI information
 * November 17, 2021: Fixed references in .R files to other scripts and datasets; other improvements for parity with Dryad submission
 * September 24, 2021: Replaced contents of `/code` with revised code
 * October 21, 2020: Replaced normal text files within `/code` with .R files
@@ -27,10 +28,10 @@ For questions concerning the manuscript, please email the corresponding author a
 ### Citation
 
 Please cite work as:
->TBD
+>Sckrabulis, JP, KA Altman, and TR Raffel. 2022. Using metabolic theory to describe temperature and thermal acclimation effects on parasitic infection. *The American Naturalist* DOI: https://doi.org/10.1086/719409.
 
-Archived version of data and code can be found on Dryad:
->TBD
+Archived version of data and code can be found on Dryad + Zenodo:
+>https://doi.org/10.5061/dryad.bnzs7h4c7
 
 ---
 
