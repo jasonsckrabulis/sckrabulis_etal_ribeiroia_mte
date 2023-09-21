@@ -44,13 +44,14 @@ Predicting temperature effects on species interactions can be challenging, espec
 ### Repository Contents
 
 * README.md
+* LICENSE.txt
 * data  
    Folder of experimental data as .csv files used in data analysis for manuscript (Please note that metacercaria encystment and clearance data is from Altman et al. 2016 and can be found on [Dryad here](https://datadryad.org/stash/dataset/doi:10.5061/dryad.f3k8p)) 
    * `Activation energy bootstrap Sckrabulis et al 2021 AmNat.csv` (final output from `Activation energy bootstrap.txt` used in Fig. 3)
    * `Cerc swimming speed Sckrabulis et al 2021 AmNat.csv` (dataset for cercaria swimming speed experiment)
    * `Uninfected tadpole respiration Sckrabulis et al 2021 AmNat.csv` (dataset for host respiration acclimation experiment)
 * code  
-   Folder of statistical R code used to analyze data as .R files for any text editor 
+   Folder of statistical R code used to analyze data as .R files 
    * `Activation energy bootstrap Sckrabulis et al 2021 AmNat.R` (Used to generate individual 95% confidence bands for respiration and metacercaria clearance)
    * `Cercaria swimming speed Sckrabulis et al 2021 AmNat.R` (Used to analyze `Cerc swimming speed Sckrabulis et al 2021 AmNat.csv` data)
    * `Metacercaria persistence Sckrabulis et al 2021 AmNat.R` (Used to analyze metacercaria clearance rate from Altman et al. 2016 data on Dryad)
