@@ -13,7 +13,7 @@ Thomas R. Raffel: raffel@oakland.edu
 
 ### Issues and suggestions
 
-Please email jason.sckrabulis@gmail.com with any issues or suggestions with the data or code supplement, or submit via the GitHub issues tab for this [repository](  https://github.com/jasonsckrabulis/sckrabulis_etal_ribeiroia_mte/issues).
+Please email jason.sckrabulis@gmail.com with any issues or suggestions with the data or code supplement, or submit via the GitHub issues tab for this [repository](https://github.com/jasonsckrabulis/sckrabulis_etal_ribeiroia_mte/issues).
 For questions concerning the manuscript, please email the corresponding author at jason.sckrabulis@gmail.com.
 
 ### Change log
